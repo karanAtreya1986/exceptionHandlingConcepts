@@ -1,0 +1,98 @@
+Exception-
+Abnormal condition.
+Event that has stopped normal behaviour of program or application.
+If exception comes, then gone, rest of code below it will not run:
+Compile time and run time exceptions are there.
+
+Error-
+Cant be handled once program starts to run.
+We have to resolve them from scratch.
+Example, virtual machine errors, out of memory etc.
+
+Checked exception and unchecked exception are the two types.
+Checked also known as compile time exceptions.
+Unchecked also known as run time exceptions.
+Checked can be handled at compile time.
+Example,  io exception related to files, interrupted exception related to threads, sql exceptions related to db issues.
+
+Unchecked exception-
+Our expertise needed to handle this.
+Null pointer exception, array index out of bounds exception, instanceof() method, arithmetic exception, number format exception.
+Unchecked handling is based on our experience with exceptions.
+
+Hierarchy of exception-
+Object 
+||
+Throwable
+||
+Exception 			
+||						
+Run time exception(unchecked exception)	
+||
+Checked exception
+
+Note- errors comes under totally different category.
+
+Finally block-
+Runs whether exception or not.
+Can be used to nullify the objects like close bufferreader.
+
+Five keywords-
+Try catch finally throw and throws.
+
+Try-
+Code which can throw exception is written here.
+Try should come within method only.
+Try should have catch or finally or both catch and finally.
+
+
+Catch-
+To catch exception. If you don’t know exception class use throwable class or exception class or particular exception class if you know it.
+Should be used after try block only.
+
+Finally-
+Block always run irrespective of exception handled or not. Close connections, close file, nullify objects. Finally block mainly used for clean up. 
+Finally block code-
+Finally will run after return statement also. Exception handling required to maintain normal flow of application.
+Try should come with catch or try with finally or try with catch and finally.
+Finally cannot come alone without try or catch.
+Finally can be written after try or after catch.
+
+Throw-
+is keyword.
+Intentionally stop applications.
+throw new ioexception("hello")
+Checked exception needs help from throws or try-catch. checked exceptions cannot be propagated without throws or try-catch.
+In short throw cannot do any propagation.
+Can throw checked and unchecked exception.
+
+Throws-
+Keyword.
+Propagate the exception to parent class or the calling area.
+Throws propagates the exceptions to the caller. The caller can be method or class.
+Why to propagate.
+Handle exception at the area where it is needed.
+Checked exceptions can be propagated. unchecked need not be handled so no propagation mandatory.
+
+To handle exceptions, we can use only try-catch.
+Throw and throws will just do passing the parcel. Throw and throws – do not handle exceptions.
+
+
+
+Throw versus throws-
+Throw – explicitly throw an exception.
+Throws – declare exception to propagate.
+Throw a checked exception – then we have to handle it mandatorily.
+Throws – checked or unchecked can be propagated everywhere.
+Throw is followed by instance or object. Example, throw new IOException(e)
+Throws is followed by class. Example, throws IOException.
+Throw is used within method.
+Throws is used as part of method signature.
+Throw multiple exceptions – not allowed.
+Throws multiple exceptions – allowed.
+To propagate checked exceptions, use throws only.
+Unchecked exception can be thrown by throw or throws.
+to handle exception thrown by the throw keyword use try-catch or throws.
+Throw or throws not for handling exceptions.
+Throw and throws not replacement for try-catch block.
+
